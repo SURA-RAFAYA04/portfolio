@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sura Majed Alrafaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Sura Majed</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>I'd love to hear from you. Please fill out the form below or send me an email directly at <a
+                        href="mailto:smalrafayia22@cit.just.edu.jo" class="highlight">smalrafayia22@cit.just.edu.jo</a>.
+                </p>
+            </div>
+
+            <div class="form-wrapper">
+                <form id="contactForm" class="contact-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                        <small class="error-text">Please enter your full name.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                        <small class="error-text">Please enter a valid email address.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" placeholder="Jordan" required>
+                        <small class="error-text">Please enter your country.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" rows="5" placeholder="Your message here..." required></textarea>
+                        <small class="error-text">Please enter your comments.</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div id="formSuccessMessage" class="success-message">Thank you! Your message has been sent
+                        successfully.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sura Majed Alrafaya. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
